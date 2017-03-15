@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+    <title>BBC site</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+	body {
+	margin:0;
+	font-family:arial,helvetica,sans-serif;
+	}
+	
+	
+	#topbar {
+	background-color:#7A0000;
+	width:100%;
+	height:40px;
+	color:white;
+	}
+	
+	.fixedwidth {
+	width:1050px;
+	margin:0 auto;
+	}
+	
+	#logodiv {
+	padding-top:12px;
+	float:left;
+	border-right:1px solid #990000;
+	padding-right:10px;
+	}
+	
+	#signindiv {
+	font-size:0.9em;
+	font-weight:bold;
+	padding:6px 80px 5px 10px;
+	float:left;
+	border-right:1px solid #990000;
+	}
+	
+	#signindiv {
+	position:relative;
+	top:3px;
+	}
+	
+	#topmenudiv {
+	float:left;
+	}
+	
+	#topmenudiv ul {
+	margin:0;
+	padding:0;
+	}
+	
+	#topmenudiv li {
+	list-style:none;
+	font-weight:bold;
+	font-size:0.9em;
+	padding:10px 20px 10px 20px;
+	border-right:1px solid #990000;
+	height:100%;
+	float:left;
+	}
+	#searchdiv {
+	float:left;
+	padding:8px 0 0 10px;
+	}
+	
+	#searchdiv input {
+	height:25px;
+	border:none;
+	font-size:0.9em;
+	padding-left:10px;
+	background-image:url("images/search.png");
+	background-repeat:no-repeat;
+	background-position:right center;
+	
+	}
+	.break {
+	clear:both;
+	}
+	
+	#newsbar {
+	background-color:#990000;
+	width:100%;
+	height:90px;
+	color:white;
+	}
+	
+	#newsbar p {
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	padding-left:10px;
+	float:left;
+	}
+	
+	#newsheader {
+	font-size:3em;
+	}
+	
+	 #uk {
+	 font-size:0.7em;
+	 padding-left:20px;
+	 }
+	
+	#rss {
+	float:right;
+	margin-top:38px;
+	}
+	
+	#rss img {
+	height:15px;
+	}
+	
+	#topicmenu {
+	
+	}
+	
+	#topicmenu ul {
+	background-color:#3E0C0D;
+	padding:5px 0 0 5px;
+	margin:0;
+	height:18px;
+	}
+	
+	#topicmenu li {
+	list-style:none;
+	font-size:0.8em;
+	background-color:none;
+	border-right:1px solid #990000;
+	float:left;
+	padding:0 6px 0 6px;
+	}
+	
+	.selected {
+	background-color:#EDEDED;
+	color:#666666;
+	height:18px;
+	position:relative;
+	top:-4px;
+	padding-top:5px !important;
+	}
+	
+	#content {
+	width:100%;
+	color:#1167a8;
+	font-size:0.8em;
+	padding-left:160px;
+	}
+	#data {
+	color:grey;
+	}
+	
+	.femeie {
+	float:left;
+	}
+	.newsitem {
+	position:relative;
+	top:-15px;
+	left:10px;
+	width:280px;
+	float:left;
+	font-size:1.1em;
+	}
+	.ceas {
+	float:left;
+	padding:6px 0 0 10px;
+	}
+	a:visited {
+	color:black;
+	}
+	.newsitem a {
+	color:grey;
+	}
+	
+	a {
+	text-decoration:none;
+	}
+	a:hover {
+	text-decoration:none;
+	}
+	
+	
+	#watchlisten {
+	background-color:#EEEEEE;
+	float:right;
+	width:330px;
+	margin-right:315px;
+    position:relative;
+	top:-37px;
+	}
+	
+	h2 {
+	color:#505050;
+	margin:10px 0 10px 10px;
+	font-size:1.8em;
+	}
+	
+	.boxes {
+	float:right;
+	margin:25px 10px 0 0;
+	}
+	
+	.stanga {
+	float:left;
+	border-left:solid white;
+	position:relative;
+	top:5px;
+	}
+	
+	.wlblock {
+	float:left;
+	background-color:#D1700E;
+	width:139px;
+	border-left:solid white;
+	}
+	
+	.wlblock a {
+	color:white;
+	}
+	
+	.wlblock p {
+	margin:0px;
+	}
+	
+	.dreapta {
+	position:relative;
+	top:4px;
+	}
+
+	#watchlisten li {
+	list-style:none;
+	background-position:;left-center;
+	background-repeat:no-repeat;
+	background-image:url("images/live.png");
+	padding:2px	0 10px 30px;
+	}
+	
+	.bb { 
+	border-bottom:1px solid #DDDDDD;
+	}
+	
+	</style>    
+</head>
+
+<body>
+ <div id="container">
+ <div id="topbar">
+ <div class="fixedwidth">
+ <div id="logodiv">
+ <img src="images/logobbc.png" />
+ </div>
+ <div id="signindiv">
+ <img src="images/signin.png" />Sing In
+ </div>
+ </div>
+ <div id="topmenudiv">
+ <ul>
+ <li>News</li>
+ <li>Sport</li>
+ <li>Weather</li>
+ <li>IPlayer</li>
+ <li>TV</li>
+ <li>Radio</li>
+ <li>More...</li>
+ </ul>
+ </div>
+ <div id="searchdiv">
+ <input type="text" placeholder="Search" />
+ </div>
+ </div>
+ <div class="break"></div>
+ <div id="newsbar">
+ <div class="fixedwidth">
+ <p id="newsheader">NEWS<span id="uk">UK</span></p>
+ <div id="rss">
+ RSS <img src="images/rss.png" />
+ </div>
+ 
+ <div class="break"></div>
+ <div id="topicmenu">
+ <ul>
+ <li>Home</li>
+ <li>World</li>
+ <li class="selected">UK</li>
+ <li>England</li>
+ <li>N. Ireland</li>
+ <li>Scotland</li>
+ <li>Wales</li>
+ <li>Business</li>
+ <li>Politisc</li>
+ <li>Health</li>
+ <li>Education</li>
+ <li>Sci/Enviroment</li>
+ <li>Technology</li>
+ <li style="border-right:none">Entertainment & Arts</li>
+ </ul>
+ </div>
+ </div>
+ 
+ <div class="break"></div>
+ <div id="content">
+<h1>Sturgeon to seek independece referendum</h1>
+<img class="femeie"src="images/femeie.png"/>
+<div class="newsitem">
+
+<p><a href="">Scotland's first minister says she will ask for permission to hold a second vote on independence.</a></p>
+<img class="ceas" src="images/data.png"/>
+<div id="data">
+<p>13 March 2017</p>
+</div>
+</div>
+ <div id="watchlisten">
+ <img src="images/boxes.png" class="boxes" />
+ <h2>Watch/Listen</h2>
+ <img src="images/stanga.png" class="stanga" />
+ <div class="wlblock">
+ <img src="images/pic1.png">
+ <p><a href="">Titanic letter could fetch $100,000</a></p>
+ </div>
+ <div class="wlblock">
+ <img src="images/pic2.png">
+ <p><a href="">Cameron defends 'Muppet' remark</a></p>
+ </div>
+ <img src="images/dreapta.png" class="dreapta" />
+ <ul>
+ <li class="bb"><a href="">BBC News Channel</li>
+ <li class="bb"><a href="">Radio 5 live</a></li>
+ <li><a href="">Osborne questioned on budget</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ 
+ 
+
+</body>
+</html>
